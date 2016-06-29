@@ -47,3 +47,5 @@ There are plenty of scroll animation plugins with their unique features. Our int
 2.  https://github.com/craigmdennis/animateCSS - dynamically apply animate.css animations
 3.  https://gomakethings.com/setting-multiple-javascript-plugin-options-with-a-single-data-attribute - To pass animateCSS options combined in single attribute
 4.  https://github.com/michalsnik/aos - the idea of using data attribute to trigger
+
+ROS is developed by [Infario](http://infario.com) 
