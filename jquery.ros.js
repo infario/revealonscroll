@@ -31,7 +31,7 @@
 				effect : effect,
 				delay : 0,
 				animationClass : 'animated',
-				infinite : false,
+				infinite : 'no',
 				callback : options,
 				duration : 1000,
 				debug : true
@@ -42,7 +42,7 @@
 				return animate(element);
 			};
 			animate = function(element) {
-				if (settings.infinite === true) {
+				if (settings.infinite == 'yes') {
 					settings.animationClass += ' infinite';
 				}
 				return setTimeout(function() {
@@ -75,7 +75,7 @@
 				});
 			};
 			callback = function(element) {
-				if (settings.infinite === false) {
+				if (settings.infinite == 'no') {
 					removeClass(element);
 				}
 				if ( typeof settings.callback === 'function') {
