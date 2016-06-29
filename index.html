@@ -6,8 +6,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="reveal animation on scroll using animate.css ">
+		<meta name="author" content="infario">
 
 		<title>Revean On Scroll - [data-ros] </title>
 
@@ -68,9 +68,13 @@
 				<p>
 					An easy to use plugin to add nice reveal animation effects on your page elements on scroll
 				</p>
-				<p><a href="" class="btn btn-primary btn-lg">Downlaod</a></p>
-				<p><!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/infariotech" data-style="mega" data-count-href="/infariotech/followers" data-count-api="/users/infariotech#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @infariotech on GitHub">Follow @infariotech</a></p>
+				<p>
+					<a href="" class="btn btn-primary btn-lg" data-ros="bounce" data-options="infinite:true">Download</a>
+				</p>
+				<p>
+					<!-- Place this tag where you want the button to render. -->
+					<a class="github-button" href="https://github.com/infariotech" data-style="mega" data-count-href="/infariotech/followers" data-count-api="/users/infariotech#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @infariotech on GitHub">Follow @infariotech</a>
+				</p>
 			</div>
 
 		</div>
@@ -129,7 +133,7 @@
 				<!-- Page Heading -->
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="page-header" data-ros="fadeIn">Page Heading <small>Secondary Text</small></h1>
+						<h1 class="page-header" data-ros="fadeIn">Demo 2<small> Portfolio </small></h1>
 					</div>
 				</div>
 				<!-- /.row -->
@@ -154,10 +158,10 @@
 
 				<!-- Project Two -->
 				<div class="row">
-					<div class="col-md-7" data-ros="fadeInRight" data-options="delay:300;">
+					<div class="col-md-7" data-ros="fadeInUp">
 						<a href="#"> <img class="img-responsive" src="http://placehold.it/700x300" alt=""> </a>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5" data-ros="fadeInDown">
 						<h3>Project Two</h3>
 						<h4>Subheading</h4>
 						<p>
@@ -172,10 +176,10 @@
 
 				<!-- Project Three -->
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-7" data-ros="bounceInLeft">
 						<a href="#"> <img class="img-responsive" src="http://placehold.it/700x300" alt=""> </a>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5" data-ros="bounceInRight">
 						<h3>Project Three</h3>
 						<h4>Subheading</h4>
 						<p>
@@ -194,7 +198,7 @@
 					<div class="col-md-7">
 						<a href="#"> <img class="img-responsive" src="http://placehold.it/700x300" alt=""> </a>
 					</div>
-					<div class="col-md-5" data-ros="fadeInRight" data-options="duration:2000">
+					<div class="col-md-5" data-ros="fadeInRight">
 						<h3>Project Four</h3>
 						<h4>Subheading</h4>
 						<p>
@@ -209,10 +213,10 @@
 
 				<!-- Project Five -->
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-7" data-ros="flipInY">
 						<a href="#"> <img class="img-responsive" src="http://placehold.it/700x300" alt=""> </a>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5" data-ros="flipInX">
 						<h3>Project Five</h3>
 						<h4>Subheading</h4>
 						<p>
@@ -223,90 +227,66 @@
 				</div>
 				<!-- /.row -->
 
-				<hr>
-
-				<!-- Pagination -->
-				<div class="row text-center">
-					<div class="col-lg-12">
-						<ul class="pagination">
-							<li>
-								<a href="#">&laquo;</a>
-							</li>
-							<li class="active">
-								<a href="#">1</a>
-							</li>
-							<li>
-								<a href="#">2</a>
-							</li>
-							<li>
-								<a href="#">3</a>
-							</li>
-							<li>
-								<a href="#">4</a>
-							</li>
-							<li>
-								<a href="#">5</a>
-							</li>
-							<li>
-								<a href="#">&raquo;</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- /.row -->
+			
 
 				<hr>
-			<div class="howto" id="Usage">
-				<h2 class="page-header">Usage</h2>
-				<ol>
-					<li>
-						<p>
-							call <b>ros.animate.css</b> in your header.
-						</p>
-						<pre>&lt;link href=&quot;css/ros.animate.css&quot; /&gt;</pre>
-						<p>
-							You may also use any animate.css version. In our file we have modified  translate3d value to 20px to make it look smoother when you scroll
+				<div class="howto" id="Usage" data-ros="fadeIn">
+					<h2 class="page-header">Usage</h2>
+					<ol>
+						<li>
+							<p>
+								call <b>ros.animate.css</b> in your header.
+							</p>
+							<pre>&lt;link href=&quot;css/ros.animate.css&quot; /&gt;</pre>
+							<p>
+								You may also use any animate.css version. In our file we have modified  translate3d value to 20px to make it look smoother when you scroll
 
-						</p>
+							</p>
 
-					</li>
-					<li>
-						<p>
-							call <b>jquery.ros.js</b> in your footer after jquery
-						</p>
-						<pre>&lt;script src=&quot;js/jquery.ros.js&quot;&gt;&lt;/script&gt;</pre>						
+						</li>
+						<li>
+							<p>
+								call <b>jquery.ros.js</b> in your footer after jquery
+							</p>
+							<pre>&lt;script src=&quot;js/jquery.ros.js&quot;&gt;&lt;/script&gt;</pre>													
   	
 
-					</li>
-					<li>
-						<p>
-							intiate ros on document ready or window load
-						</p>
-						<pre>ros.init();</pre>
-					</li>
-					<li>
 
-						<p>
-							Add <code>
-								data-ros=&quot;fadeIn&quot;</code>attribute with your desired animate.css effect to your html element
+						</li>
+						<li>
+							<p>
+								intiate ros on document ready or window load
+							</p>
+							<pre>ros.init();</pre>
+						</li>
+						<li>
 
-						</p>
-						<pre>&lt;h1 data-ros=&quot;fadeIn&quot;&gt; Text to animate &lt;/h1&gt;</pre>
+							<p>
+								Add
+								<code>
+									data-ros=&quot;fadeIn&quot;
+								</code>attribute with your desired animate.css effect to your html element
 
-					</li>
-					<li>
-						<p>
-							You can add more options with <code>
-								data-options</code>
-							attribute.
-						</p>
-						<pre> &lt;div data-ros=&quot;zoomIn&quot; data-options=&quot;delay:300;duration:1000&quot;&gt;</pre>
-					</li>
-					<li>
-						<p>
-							Available Options:
-						</p>
-						<pre>
+							</p>
+							<pre>&lt;h1 data-ros=&quot;fadeIn&quot;&gt; Text to animate &lt;/h1&gt;</pre>							
+
+
+						</li>
+						<li>
+							<p>
+								You can add more options with
+								<code>
+									data-options
+								</code>
+								attribute.
+							</p>
+							<pre> &lt;div data-ros=&quot;zoomIn&quot; data-options=&quot;delay:300;duration:1000&quot;&gt;</pre>
+						</li>
+						<li>
+							<p>
+								Available Options:
+							</p>
+							<pre>
   data-options="infinite:false;animationClass:'animated';delay: 0;duration: 1000;callback:;"
 &lt;!--  
   animationClass: "animated"  // Can be any class. for magic.css use 'puffIn'
@@ -315,42 +295,47 @@
   callback:; // Any function
  --&gt;
     		</pre>
-					</li>
-				</ol>
-				<h2 class="page-header">How it Works</h2>
-				<p>
-					There are plenty of scroll animation plugins with their unique features. Our intention is to use minimal one to support predefined css animations that easy to configure. Technically our work is outcome of combined package of few jquery plugins.
+						</li>
+					</ol>
+					<h2 class="page-header">How it Works</h2>
+					<p>
+						There are plenty of scroll animation plugins with their unique features. Our intention is to use minimal one to support predefined css animations that easy to configure. Technically our work is outcome of combined package of few jquery plugins.
 
-				</p>
-				<ol>
-					<li>
-						https://github.com/protonet/jquery.inview - to find an element is scrolled into view
-					</li>
-					<li>
-						https://github.com/craigmdennis/animateCSS - dynamically apply animate.css animations
-					</li>
-					<li>
-						https://gomakethings.com/setting-multiple-javascript-plugin-options-with-a-single-data-attribute - To pass animateCSS options combined in single attribute
-					</li>
-					<li>
-						https://github.com/michalsnik/aos - the idea of using data attribute to trigger
-					</li>
-				</ol>
+					</p>
+					<ol>
+						<li>
+							https://github.com/protonet/jquery.inview - to find an element is scrolled into view
+						</li>
+						<li>
+							https://github.com/craigmdennis/animateCSS - dynamically apply animate.css animations
+						</li>
+						<li>
+							https://gomakethings.com/setting-multiple-javascript-plugin-options-with-a-single-data-attribute - To pass animateCSS options combined in single attribute
+						</li>
+						<li>
+							https://github.com/michalsnik/aos - the idea of using data attribute to trigger
+						</li>
+					</ol>
 
-			</div>
+				</div>
+				<hr>
 				<!-- Footer -->
-				<footer>
+				<footer data-ros="fadeInUp">
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-12 text-center">
+							<p>
+								Developed by
+							</p>
+							<p>
+								<a href="http://infario.com/" target="_blank"> <img src="css/infario-tulip.png" width="96" >
+								<br>
+								INFARIO </a>
+							</p>
 							<p>
 								Copyright &copy; Infario 2016
 							</p>
 						</div>
-						<div class="col-lg-6">
-							
-						Developed by <a href="http://infario.com/" target="_blank">INFARIO<img src="assets/images/home/infario.png" class="img-responsive"></a>
-					
-						</div>
+
 					</div>
 					<!-- /.row -->
 				</footer>
@@ -364,7 +349,7 @@
 			<!-- Bootstrap Core JavaScript -->
 			<script src="js/bootstrap.min.js"></script>
 			<script src="jquery.ros.js"></script>
-            
+
 			<script>
 				//  $('body').animateCSS("fadeIn",{duration:3000});
 				$(document).ready(function() {
@@ -372,8 +357,25 @@
 				});
 			</script>
 			<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+			<script>
+				(function(i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] ||
+					function() {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+					a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m)
+				})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+				ga('create', 'UA-6827490-6', 'auto');
+				ga('send', 'pageview');
+
+			</script>
 	</body>
 
 </html>
