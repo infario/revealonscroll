@@ -31,7 +31,7 @@
 				effect : effect,
 				delay : 0,
 				animationClass : 'animated',
-				infinite : false,
+				infinite : 'no',
 				callback : options,
 				duration : 1000,
 				debug : true
@@ -42,7 +42,7 @@
 				return animate(element);
 			};
 			animate = function(element) {
-				if (settings.infinite === true) {
+				if (settings.infinite =='yes') {
 					settings.animationClass += ' infinite';
 				}
 				return setTimeout(function() {
@@ -75,7 +75,7 @@
 				});
 			};
 			callback = function(element) {
-				if (settings.infinite === false) {
+				if (settings.infinite == 'no') {
 					removeClass(element);
 				}
 				if ( typeof settings.callback === 'function') {
@@ -274,7 +274,7 @@ var getDataOptions = function(options) {
 
 	// Trim whitespace from a string
 	var trim = function(string) {
-		return string.replace(/^s+|s+$/g, '');
+		return string.replace(/^\s+|\s+$/g, '');
 	};
 
 	// Create a key/value pair for each setting
@@ -303,6 +303,7 @@ var ros = {
 			if (isInView) {
 				if ($(this).css("visibility") == 'hidden') {
 					var options = getDataOptions($this.data('options')) || null;
+					console.log(options);
 					$(this).animateCSS($this.data('ros'), options);
 				}
 
