@@ -5,13 +5,13 @@ An easy to use plugin to add nice reveal animation effects on your page elements
 
 1.  call **ros.animate.css** in your header.
 
-    <pre><link href="css/ros.animate.css" /></pre>
+    <pre>&lt;link href=&quot;css/ros.animate.css&quot; /&gt;</pre>
 
     You may also use any animate.css version. In our file we have modified translate3d value to 20px to make it look smoother when you scroll
 
 2.  call **jquery.ros.js** in your footer after jquery
 
-    <pre><script src="js/jquery.ros.js"></script></pre>
+    <pre>&lt;script src=&quot;js/jquery.ros.js&quot;&gt;&lt;/script&gt;</pre>
 
 3.  intiate ros on document ready or window load
 
@@ -19,11 +19,11 @@ An easy to use plugin to add nice reveal animation effects on your page elements
 
 4.  Add `data-ros="fadeIn"`attribute with your desired animate.css effect to your html element
 
-    <pre><h1 data-ros="fadeIn"> Text to animate </h1></pre>
+    <pre>&lt;h1 data-ros=&quot;fadeIn&quot;&gt; Text to animate &lt;/h1&gt;</pre>
 
 5.  You can add more options with `data-options` attribute.
 
-    <pre> <div data-ros="zoomIn" data-options="delay:300;duration:1000"></pre>
+    <pre>&lt;div data-ros=&quot;zoomIn&quot; data-options=&quot;delay:300;duration:1000&quot;&gt;</pre>
 
 6.  Available Options:
 
