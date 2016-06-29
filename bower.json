@@ -1,0 +1,25 @@
+{
+  "name": "Reveal On Scroll",
+  "description": "An easy to use plugin to add nice reveal animation effects on your page elements on scroll",
+  "keywords": [
+    "css",
+    "js",
+    "animation",
+    "scroll",
+    "responsive",
+    "front-end",
+    "plugin",
+	"jquery"
+    "web"
+  ],
+  "homepage": "https://infariotech.github.io/revealonscroll/",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "ros.animate.css",
+    "jquery.ros.js"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  }
+}
