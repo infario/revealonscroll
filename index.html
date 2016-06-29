@@ -227,8 +227,6 @@
 				</div>
 				<!-- /.row -->
 
-			
-
 				<hr>
 				<div class="howto" id="Usage" data-ros="fadeIn">
 					<h2 class="page-header">Usage</h2>
@@ -248,8 +246,10 @@
 							<p>
 								call <b>jquery.ros.js</b> in your footer after jquery
 							</p>
-							<pre>&lt;script src=&quot;js/jquery.ros.js&quot;&gt;&lt;/script&gt;</pre>													
+							<pre>&lt;script src=&quot;js/jquery.ros.js&quot;&gt;&lt;/script&gt;</pre>																											
   	
+
+
 
 
 						</li>
@@ -268,7 +268,9 @@
 								</code>attribute with your desired animate.css effect to your html element
 
 							</p>
-							<pre>&lt;h1 data-ros=&quot;fadeIn&quot;&gt; Text to animate &lt;/h1&gt;</pre>							
+							<pre>&lt;h1 data-ros=&quot;fadeIn&quot;&gt; Text to animate &lt;/h1&gt;</pre>																					
+
+
 
 
 						</li>
@@ -352,9 +354,22 @@
 			<script src="jquery.ros.js"></script>
 
 			<script>
-				//  $('body').animateCSS("fadeIn",{duration:3000});
 				$(document).ready(function() {
 					ros.init();
+				});
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+							if (target.length) {
+								$('html, body').animate({
+									scrollTop : target.offset().top
+								}, 1000);
+								return false;
+							}
+						}
+					});
 				});
 			</script>
 			<!-- Place this tag in your head or just before your close body tag. -->
